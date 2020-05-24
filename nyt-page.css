@@ -13,7 +13,79 @@ nav {
 	bottom: 0;
 	left: 0;
 	height: 45px;
-	background: var(--yellow);
+	border-bottom: 1px solid #DDD;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background: white;
+}
+
+nav a {
+	display: block;
+}
+
+.mast {
+	flex: 1;
+	min-width: 200px;
+}
+
+.mast img {
+	margin: auto;
+}
+
+.nav-btn {
+	background-color: white;
+	border: none;
+	border-image: none;
+	border-radius: 3px;
+	height: 30px;
+}
+
+.nav-btn:hover {
+	background-color: #EEE;
+}
+
+.nav-btn img {
+	height: 17px;
+}
+
+.buff {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.topic {
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 13px;
+}
+
+.topic:hover {
+	text-decoration: underline;
+
+}
+
+.account {
+	font-family: helvetica, sans-serif;
+	border: none;
+	margin-right: 30px;
+	margin-left: 15px;
+	font-size: 12px;
+}
+
+.crossword {
+	background-color: black;
+	border-image: none;
+	color: white;
+	font-family: helvetica, sans-serif;
+	height: 30px;
+	width: 150px;
+	border: none;
+	border-radius: 3px;
+	font-size: 14px;
 }
 
 .dummy {
@@ -25,6 +97,107 @@ nav {
 	display: block;
 	height: 30px;
 
+}
+
+
+
+/* main */
+
+.main {
+	display: grid;
+	grid-template-columns: 1fr 600px 1fr;
+	grid-gap: 0;
+}
+
+.main >* {
+	grid-column: 2 / -2;
+}
+
+h1.title {
+	font-family: georgia, serif;
+	color: #111;
+	font-size: 35px;
+	font-weight: 600;
+	margin-bottom: 0;
+	line-height: 45px;
+}
+
+.main p {
+	font-size: 20px;
+	color: #333;
+	line-height: 30px;
+	margin: 0;
+}
+
+.main .bold {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.main .diagram {
+	grid-column: 1 / -1;
+	max-width: 800px;
+	margin: 40px auto;
+}
+
+.diagram h1 {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.diagram p {
+	font-size: 15px;
+	color: #555;
+	line-height: 15px;
+	margin-bottom: 20px;
+}
+
+.diagram-wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.step img {
+	width: 100%;
+}
+
+.main .image {
+	grid-column: 1 / -1;
+	max-width: 700px;
+	margin: 40px auto;
+}
+
+.main .main-image {
+	max-width: 1100px;
+}
+
+.image img {
+	width: 100%;
+}
+
+.main .video {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+figcaption h3 {
+	font-size: 16px;
+	color: #555;
+	font-weight: 400;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+figcaption span {
+	font-size: 13px;
+	color: #AAA;
+
+}
+
+
+.bottom-wrapper {
+	max-width: 1200px;
+	margin: auto;
 }
 
 /* suggested */
